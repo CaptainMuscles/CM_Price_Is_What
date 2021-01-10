@@ -20,7 +20,7 @@ namespace CM_Price_Is_What
             {
                 if (PlaySettingsPatches.PlaySettings_DoPlaySettingsGlobalControls.showPrice && __instance.def.hasTooltip)
                 {
-                    __result.text = __result.text + "\n" + "MarketValueTip".Translate() + " " + __instance.MarketValue;
+                    __result.text = __result.text + "\n" + "MarketValueTip".Translate() + " " + (__instance.MarketValue * __instance.stackCount);
                 }
             }
         }

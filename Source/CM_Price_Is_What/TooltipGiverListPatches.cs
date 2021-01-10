@@ -58,7 +58,10 @@ namespace CM_Price_Is_What
                 {
                     text = text + "\n" + thing.HitPoints + " / " + thing.MaxHitPoints;
                 }
-                text = text + "\n" + "MarketValueTip".Translate() + " " + thing.MarketValue;
+                if (thing.stackCount > 1)
+                    text = text + "\n" + "MarketValueTip".Translate() + " " + thing.MarketValue + " * " + thing.stackCount + " = " + (thing.MarketValue * thing.stackCount);
+                else
+                    text = text + "\n" + "MarketValueTip".Translate() + " " + thing.MarketValue;
 
                 return new TipSignal(text, thing.thingIDNumber * 251235);
             }
