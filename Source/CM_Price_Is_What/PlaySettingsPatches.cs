@@ -11,6 +11,7 @@ namespace CM_Price_Is_What
     [StaticConstructorOnStartup]
     public static class PlaySettingsPatches
     {
+        [StaticConstructorOnStartup]
         [HarmonyPatch(typeof(PlaySettings))]
         [HarmonyPatch("DoPlaySettingsGlobalControls", MethodType.Normal)]
         public static class PlaySettings_DoPlaySettingsGlobalControls

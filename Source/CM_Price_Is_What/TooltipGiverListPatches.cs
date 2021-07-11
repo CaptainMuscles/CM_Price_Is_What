@@ -29,8 +29,6 @@ namespace CM_Price_Is_What
                 Vector2 vector = new Vector2(cellSizePixels, cellSizePixels);
                 Rect rect = new Rect(0f, 0f, vector.x, vector.y);
 
-                
-
                 foreach (Thing thing in map.listerThings.AllThings)
                 {
                     if (!currentViewRect.Contains(thing.Position) || thing.Position.Fogged(thing.Map))
