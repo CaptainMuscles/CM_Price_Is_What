@@ -1,8 +1,14 @@
-## [1.0.2] - 2021-08-03
+## [1.0.4] - 2022-12-18
+
+### Added
+- Support for Rimworld version 1.4
+- Russian translation by Zerus
+- Ukrainian translation
+
+## [1.0.3] - 2021-08-03
 
 ### Added
 - Spanish translation by Ferchu
-
 
 ## [1.0.2] - 2021-07-11
 
